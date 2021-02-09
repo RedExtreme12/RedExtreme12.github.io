@@ -9,3 +9,5 @@
 ![Work example](https://github.com/RedExtreme12/redextreme12.github.io/blob/main/readmescreens/example_work_1.gif)
 
 ## Руководство
+
+![Screen of work space](https://github.com/RedExtreme12/redextreme12.github.io/blob/main/readmescreens/screen_1.png)
