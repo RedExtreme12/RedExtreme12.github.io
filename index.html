@@ -1,10 +1,4 @@
 
-<!-- 
-    file:///C:/Users/kiril/dev/Javascript/ComputerGraphics/color-picker-master/index.html
-    https://api.jqueryui.com/slider/#method-value
-    TODO: сделать без LAB, про LAB спросить на лекции
- -->
-
  <html lang="en">
   <head>
       <meta charset="UTF-8">
@@ -31,68 +25,70 @@
    
   </head>
   <body>
-      <div class="background">
-          <form></form>
-          <div class="picker-container">
-              <div class="form-row">
-                  <div class="form-group col-md-12">
-                      <label for="floating-color-picker">Color picker</label>
-                      <input id="floating-color-picker" type="text" class="form-control">
-                  </div>
-              </div>
-  
-              <div class="form-row">
-                  <div class="form-group col-md-4">
-                      <p class="color-model-name">RGB</p>
-                      <label for="rgb-red">Red</label>
-                      <input id="rgb-red" type="number" min="0" max="255" class="form-control rgb-color-param" placeholder="Red">
-                      <div class="slider rgb-slider" id="rgb-red-slider"></div>
-  
-                      <label for="rgb-green">Green</label>
-                      <input id="rgb-green" type="number" min="0" max="255" class="form-control rgb-color-param" placeholder="Green">
-                      <div class="slider rgb-slider" id="rgb-green-slider"></div>
-  
-                      <label for="rgb-blue">Blue</label>
-                      <input id="rgb-blue" type="number" min="0" max="255" class="form-control rgb-color-param" placeholder="Blue">
-                      <div class="slider rgb-slider" id="rgb-blue-slider"></div>
-                  </div>
-  
-                  <div class="form-group col-md-4">
-                      <p class="color-model-name">CMYK</p>
-                      <label for="CMYK-C">C</label>
-                      <input id="CMYK-C" type="text" class="form-control cmyk-color-param" placeholder="C">
-                      <div class="slider CMYK-slider" id="CMYK-C-slider"></div>
-  
-                      <label for="CMYK-M">M</label>
-                      <input id="CMYK-M" type="text" class="form-control cmyk-color-param" placeholder="M">
-                      <div class="slider CMYK-slider" id="CMYK-M-slider"></div>
-  
-                      <label for="CMYK-Y">Y</label> 
-                      <input id="CMYK-Y" type="text" class="form-control cmyk-color-param" placeholder="Y">
-                      <div class="slider CMYK-slider" id="CMYK-Y-slider"></div>
-
-                      <label for="CMYK-K">K</label>
-                      <input id="CMYK-K" type="text" class="form-control cmyk-color-param" placeholder="K">
-                      <div class="slider CMYK-slider" id="CMYK-K-slider"></div>
-                  </div>
-  
-                  <div class="form-group col-md-4">
-                      <p class="color-model-name">HSV</p>
-                      <label for="hsv-hue">Hue</label>
-                      <input id="hsv-hue" type="text" class="form-control hsv-color-param" placeholder="Hue">
-                      <div class="slider hsv-slider" id="hsv-hue-slider"></div>
-
-                      <label for="hsv-saturation">Saturation</label>
-                      <input id="hsv-saturation" type="text" class="form-control hsv-color-param" placeholder="Saturation">
-                      <div class="slider hsv-slider" id="hsv-saturation-slider"></div>
-
-                      <label for="hsv-value">Value</label>
-                      <input id="hsv-value" type="text" class="form-control hsv-color-param" placeholder="Value">
-                      <div class="slider hsv-slider" id="hsv-value-slider"></div>
+      <main>
+        <div class="background">
+            <form></form>
+            <div class="picker-container">
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="floating-color-picker">Color picker</label>
+                        <input id="floating-color-picker" type="text" class="form-control">
+                    </div>
                 </div>
-              </div>
-          </div>
-      </div>
+    
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <p class="color-model-name">RGB</p>
+                        <label for="rgb-red">Red</label>
+                        <input id="rgb-red" type="number" min="0" max="255" class="form-control rgb-color-param" placeholder="Red">
+                        <div class="slider rgb-slider" id="rgb-red-slider"></div>
+    
+                        <label for="rgb-green">Green</label>
+                        <input id="rgb-green" type="number" min="0" max="255" class="form-control rgb-color-param" placeholder="Green">
+                        <div class="slider rgb-slider" id="rgb-green-slider"></div>
+    
+                        <label for="rgb-blue">Blue</label>
+                        <input id="rgb-blue" type="number" min="0" max="255" class="form-control rgb-color-param" placeholder="Blue">
+                        <div class="slider rgb-slider" id="rgb-blue-slider"></div>
+                    </div>
+    
+                    <div class="form-group col-md-4">
+                        <p class="color-model-name">CMYK</p>
+                        <label for="CMYK-C">C</label>
+                        <input id="CMYK-C" type="text" class="form-control cmyk-color-param" placeholder="C">
+                        <div class="slider CMYK-slider" id="CMYK-C-slider"></div>
+    
+                        <label for="CMYK-M">M</label>
+                        <input id="CMYK-M" type="text" class="form-control cmyk-color-param" placeholder="M">
+                        <div class="slider CMYK-slider" id="CMYK-M-slider"></div>
+    
+                        <label for="CMYK-Y">Y</label> 
+                        <input id="CMYK-Y" type="text" class="form-control cmyk-color-param" placeholder="Y">
+                        <div class="slider CMYK-slider" id="CMYK-Y-slider"></div>
+
+                        <label for="CMYK-K">K</label>
+                        <input id="CMYK-K" type="text" class="form-control cmyk-color-param" placeholder="K">
+                        <div class="slider CMYK-slider" id="CMYK-K-slider"></div>
+                    </div>
+    
+                    <div class="form-group col-md-4">
+                        <p class="color-model-name">HSV</p>
+                        <label for="hsv-hue">Hue</label>
+                        <input id="hsv-hue" type="text" class="form-control hsv-color-param" placeholder="Hue">
+                        <div class="slider hsv-slider" id="hsv-hue-slider"></div>
+
+                        <label for="hsv-saturation">Saturation</label>
+                        <input id="hsv-saturation" type="text" class="form-control hsv-color-param" placeholder="Saturation">
+                        <div class="slider hsv-slider" id="hsv-saturation-slider"></div>
+
+                        <label for="hsv-value">Value</label>
+                        <input id="hsv-value" type="text" class="form-control hsv-color-param" placeholder="Value">
+                        <div class="slider hsv-slider" id="hsv-value-slider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </main>
   
       <script src="color-picker.min.js"></script>
       <script src="js/script.js"></script>
